@@ -6,6 +6,7 @@ from langgraph.graph.message import add_messages
 from dotenv import load_dotenv
 from langchain_mistralai.chat_models import ChatMistralAI
 import os
+from langchain_core.messages import HumanMessage
 
 # Load .env file
 load_dotenv()
@@ -42,4 +43,6 @@ graph.add_edge("chat_node", END)
 
 # Compile
 chatbot = graph.compile(checkpointer=checkpointer)
+
+
 
