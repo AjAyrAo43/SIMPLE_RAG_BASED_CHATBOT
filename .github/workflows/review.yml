@@ -23,6 +23,7 @@ jobs:
         with:
           repository: AjAyrAo43/Ai-code-reviewer
           path: ai-code-reviewer
+          token: ${{ secrets.PAT_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v4
