@@ -30,9 +30,10 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
+        working-directory: ./ai-code-reviewer
         run: |
-          ls -la ai-code-reviewer/
-          pip install -r ai-code-reviewer/requirements.txt
+          ls -la
+          pip install -r requirements.txt
 
       - name: Run AI Code Review
         id: review
